@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="/css/styles.css")
+
+        title Voyage voyage
+
+    header 
+        .logo 
+            img(src='logo.png', alt='logo')
+
+        nav
+            ul.menu
+                li 
+                    a(href="/") Accueil
+                li
+                    a(href="/destinations") Les destinations
+                    ul.sub-menu
+                        li: a(href="/country") Allemagne
+                        li: a(href="/country") Croatie
+                        li: a(href="/country") Espagne
+                        li: a(href="/country") France
+                        li: a(href="/country") Grèce
+                        li: a(href="/country") Hongrie
+                        li: a(href="/country") Islande
+                        li: a(href="/country") Italie
+                        li: a(href="/country") Malte
+                        li: a(href="/country") Portugal
+                li: a(href="/reservation") Réservation
+                li: a(href="/contact") Contact
+                li: a(href="/#") Se connecter         
+                li: a(href="/#") S'inscrire          
+block content
