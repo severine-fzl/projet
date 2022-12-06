@@ -1,0 +1,147 @@
+<div class="contact">
+    <h1>Prenez contact avec nous</h1>
+    <h2>Formulaire de pré-réservation</h2>
+</div>
+
+<div class="contactez-nous">
+    <form action="/page-traitement-donnees" method="post">
+        <div class="name">
+            <div>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+            </div>
+            <div>
+                <label for="nom">Prenom</label>
+                <input type="text" id="prenom" name="prenom" required>
+            </div>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Numero de téléphone</label>
+            <input type="phone" id="phone" name="phone" required>
+        </div>
+        <div>
+            <label for="pays-select">Choisir un pays :</label>
+            <select name="pays" id="pays-select" required>
+                <option value="">--Merci de choisir un pays--</option>
+                <option value="allemagne">Allemagne</option>
+                <option value="croatie">Croatie</option>
+                <option value="espagne">Espagne</option>
+                <option value="france">France</option>
+                <option value="grece">Grece</option>
+                <option value="hongrie">Hongrie</option>
+                <option value="islande">Islande</option>
+                <option value="italie">Italie</option>
+                <option value="malte">Malte</option>
+                <option value="portugal">Portugal</option>
+            </select>
+        </div>
+        <div>
+            <label for="ville-select">Choisir une ville :</label>
+            <select name="ville" id="pays-select" required>
+                <option value="">--Merci de choisir une ville--</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+        <div>
+            <label for="date-depart">Date de départ :</label>
+            <input type="date" id="date-depart" name="date-depart" required>
+        </div>
+        <div>
+            <label for="date-retour">Date de retour :</label>
+            <input type="date" id="date-retour" name="date-retour" required>
+        </div>
+        <div>
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...."
+                required></textarea>
+        </div>
+        <div>
+            <button type="submit">Envoyer mon message</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+/* .formulaire {
+    width: 1000px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+    padding: 50px 50px 50px 50px;
+    margin: 50px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire input {
+    border: 0;
+    border-bottom: 2px solid #333;
+    font-size: 18px;
+    font-family: inherit;
+    padding: 15px 0px;
+    outline: none;
+    transition: all 0.2s ease-in;
+    background: transparent;
+}
+
+
+input::placeholder {
+    color: white;
+}
+
+input {
+    width: 350px;
+    height: 30px;
+}
+
+.name {
+    display: flex;
+} */
+
+.contactez-nous {
+    width: 700px;
+    padding: 0 50px 0 50px;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 50%);
+}
+
+form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+form div>label {
+    margin-bottom: 7px;
+    font-weight: 600;
+}
+
+
+form div>input,
+form div>select {
+    height: 50px;
+    padding-left: 10px;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+
+}
